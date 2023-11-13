@@ -10,6 +10,15 @@ $ ./deploy.sh
 
 - Then visit http://localhost:3000 on your browser
 - Please Note: The setup is tested with postgres database with connection scheme as "postgresql"
+- The deployment includes a dummy postgres database for testing
+- Input the following credentials in the "Connect to Database" screen to connect to the test postgres database
+```
+Connection Scheme: postgresql
+Username: myuser
+Password: mypassword
+Database URL: host.docker.internal:5432/mydatabase
+```
+
 
 ## Improvements
 Listing down few improvements for the project:

@@ -1,11 +1,28 @@
 version: "3.9"
 
 services:
+  init-data:
+    image: postgres:latest
+    volumes:
+      - ./data/init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    ports:
+      - "5432:5432"
+    networks:
+      - mynetwork
+
+
   backend:
     build:
       context: backend
     ports:
       - "8000:8000"
+    networks:
+      - mynetwork
+
 
   frontend:
     build:
@@ -15,5 +32,11 @@ services:
     command: sh -c "npm run start"
     environment:
       - NODE_ENV=production
+    networks:
+      - mynetwork
 
+
+networks:
+  mynetwork:
+    driver: bridge
 
