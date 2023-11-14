@@ -35,6 +35,7 @@ Listing down few improvements for the project:
 - UI Improvements: Breadcrumbs, Responsiveness
 
 ### Backend:
+- Security: csrf, https, query sanitization
 - Adding api to search tables and columns
 - Session persistence, Authentication 
 - Redis to cache query results
