@@ -27,7 +27,7 @@ Listing down few improvements for the project:
 - Adding seach bar to search tables and columns
 - Redux state management for React frontend
 - Separating out api calls in separate module 
-- Adding connection options in connection form
+- Adding more connection options (connection schemes, database schema etc.) in connection form
 - Adding session and db credentials persistence
 - Adding Authentication
 - Adding tests
@@ -40,3 +40,7 @@ Listing down few improvements for the project:
 - Redis to cache query results
 - Adding typing to API and functions
 - Adding tests
+
+### Infrastructure
+- CI/CD pipeline
+- Deployment in GCP/AWS
