@@ -1,5 +1,5 @@
 # DB Explorer
-- Project to connect to a database and inspect various metrics related to the table
+- Project to connect to a database and inspect various metrics for tables
 - It uses ReactJs in the frontend and Python FastAPI as the backend
 
 ## How to run
